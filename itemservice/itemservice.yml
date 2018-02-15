@@ -19,10 +19,6 @@ security:
   basic:
     enabled: false
 
-server:
-  port: ${PORT:${SERVER_PORT:0}}
-#  port: 8082
-
 eureka:
   client:
     serviceUrl:
@@ -37,3 +33,6 @@ eureka:
 #    serviceUrl:
 #      defaultZone: http://localhost:8761/eureka/
 
+server:
+  port: 8082
+#  port: ${PORT:${SERVER_PORT:0}}
